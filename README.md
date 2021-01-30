@@ -7,3 +7,4 @@ Application for the React Native coding challenge on Maniak.
 - Clone repository `https://github.com/misfits91/imagesApp.git`
 - `npm install` or `yarn`
 - `npx pod-install` (for iOS pods)
+- `npm run android/ios` or `yarn android/io`

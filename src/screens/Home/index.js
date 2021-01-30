@@ -5,7 +5,8 @@ import {
   StyleSheet,
   StatusBar,
   TouchableOpacity,
-  Alert
+  Alert,
+  Platform
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -25,6 +26,7 @@ export default function({ navigation }) {
 
   const fetchImages = async () => {
     const data = await getImages();
+    console.log(data)
     setImages(data);
   };
 
@@ -89,7 +91,7 @@ const styles = StyleSheet.create({
   exit: {
     position: 'absolute',
     right: 10,
-    top: 60,
+    top: Platform.OS === 'ios' ? 60 : 20,
     zIndex: 10000
   }
 });

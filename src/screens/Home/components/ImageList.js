@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   item: {
     width,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   imageContainer: {
     height: imageH,
@@ -60,6 +60,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.58,
     shadowRadius: 16.00,
     elevation: 24,
+    backgroundColor: 'black'
   },
   image: {
     height: imageH,

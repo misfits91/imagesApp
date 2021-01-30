@@ -18,7 +18,7 @@ export const loginUser = async ({ username, password }) => {
     const result = await request.json();
     return result;
   } catch (err) {
-    return false;
+    return false; 
   }
 };
 
